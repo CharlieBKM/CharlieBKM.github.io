@@ -1,0 +1,135 @@
+html 
+{
+    background-color: #13322B;
+}
+
+
+body 
+{
+    text-align:left;
+    background: #13322B;
+    /*box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.06);*/
+    color: #545454;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin: auto;
+    max-width: auto;
+    padding: auto;
+}
+
+
+
+
+/*
+h1 
+{   color:#D4C19C;
+    text-align: center;
+	line-height: 1;
+	font-size: 28px;
+}
+*/
+
+
+
+
+
+
+
+.logoimss
+{
+  
+	text-align: center;
+	
+	
+}
+
+TD a
+{
+    text-decoration:none;
+	text-decoration:initial;
+    font-weight: bold;
+    line-height:1.7;
+    color:#D4C19C;
+   /* border:1px solid #ccc; para bordes de botones*/
+   
+    
+}
+
+ul, ol 
+{
+    list-style: ;
+	color: #D4C19C;
+}
+
+
+.navimss ul
+{
+    display: none;
+}
+
+
+.navimss li:hover > ul
+{
+    display: block;
+	
+}
+
+
+/*
+.navimss ul li ul li
+{
+    position: relative;
+	
+}
+
+.navimss ul li ul li
+{
+    right: -20px;
+	top: 0px;
+	
+}
+*/
+
+
+
+#menuimss {
+	position:relative;
+	width: 26%;
+	height: 100%;
+	
+	background-color:;
+    font-size: 15px;
+}
+
+
+#menuimss2 {
+	position:relative;
+	width: 73.5%;
+	height: 100%;
+	background-color:;
+	text-align: center;
+}
+
+
+
+/*
+#menuimss3 {
+	position: absolute;
+	width: 850px;
+	height: 550px;
+	top: 741px;
+	left: 400px;
+	background-color:#D4C19C;
+}
+
+
+
+#menuimss4 {
+	position: absolute;
+	width: 850px;
+	height: 550px;
+	top: 1291px;
+	left: 400px;
+	background-color:#;
+}
+*/
+
