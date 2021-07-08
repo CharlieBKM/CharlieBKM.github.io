@@ -1,42 +1,174 @@
 <!DOCTYPE html>
-<html lang="es">
-	<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Título </title>
-  <link rel="stylesheet" href="estilo.css">
-  <script src="mi_archivo_utilidades.js"></script>
-	...
-	</head>
-	<body>
-	 <header> Cabecera </header>
-  <nav> Menú </nav>
-  <main> 
-		<section>
-       <h2> Cabecera de sección 1 </h2>
-        <article>
-          <h3> Cabecera del artículo 1 </h3>
-            <div class="fondo_art_1">
-				<p> Primer párrafo del artículo 1 </p>
-				<p> Segundo párrafo del artículo 1 </p>
-			   </div>
-			</article> 
-			<article>
-          <h3> Cabecera del artículo 2 </h3>
-            <p> Párrafo del artículo 2 </p>
-        </article>      
-			  ...
-		</section>
-     <section>
-       <h2> Cabecera de sección 2</h2>
-        	  ...
-		</section>
-</main> 
-<aside> 
-    <p> Publicidad </p>  
-</aside>
-<footer> 
-    <p> ©Copyright 2018 aulaClic </p> 
-</footer>
-	</body>
+<html>
+<head>
+	 	<meta charset="UTF-8" >
+	   <title>ENCUESTA NACIONAL DE IMAGEN DEL IMSS 2021</title>
+        <meta name="description" content="Encuesta Imagen IMSS 2021">
+        <link rel="stylesheet" href="Files/Encuesta Imagen IMSS 2021_N.css">
+</head>
+    
+<body>
+    
+    <TABLE WIDTH="100%" HEIGHT="100%"> 
+        <TR>
+            <TH COLSPAN=2 class= "logoimss">
+            <img src="Files/Imag_fotos_gif_/titulo.png"  width="1100" height="170"></TH>
+        </TR>
+        <TR>
+            <TD id="menuimss">
+                <ul class="navimss">
+                    <li onclick="getPDF('Files/PDF/0SintesisEncuesta2021.pdf#toolbar=0', download='Files/PDF/0SintesisEncuesta2021.rar')" ><a href ="#">SÍNTESIS EJECUTIVA</a></li>
+                    <li onclick="getPDF('Files/PDF/01_Introducción.pdf#toolbar=0', download='Files/PDF/01_Introducción.rar')"><a href="#">Introducción</a></li>
+                    <li onclick="getPDF('Files/PDF/02_Resumen ejecutivo.pdf#toolbar=0', download='Files/PDF/02_Resumen ejecutivo.rar')"><a href="#">Resumen</a></li>
+                    <li onclick="getPDF('Files/PDF/03_Metodología.pdf#toolbar=0', download='Files/PDF/03_Metodología.rar')"><a href="#">Metodología</a></li>
+                    <li onclick="getPDF('Files/PDF/0ENCALImagenTransparencia.pdf#toolbar=0', download='Files/PDF/0ENCALImagenTransparencia.rar')"><a href="#">Cuestionario</a></li>
+                    <li onclick="getPDF('Files/PDF/04_Perfil de los usuarios.pdf#toolbar=0', download='Files/PDF/04_Perfil de los usuarios.rar')"><a href="#">Perfil de personas usuarias</a></li>
+                    <li onclick="getPDF('Files/PDF/05_Principales resultados.pdf#toolbar=0', download='Files/PDF/05_Principales resultados.rar')"><a href="#">Principales resultados</a></li>  
+                    <li onclick="getPDF('Files/PDF/06_ActuaciónycomparacióndelIMSS.pdf#toolbar=0', download='Files/PDF/06_ActuaciónycomparacióndelIMSS.rar')"><a href="#">Actuación del IMSS ante Covid-19</a>
+                        <ul >                   
+                            <li onclick="getPDF('Files/PDF/Nivel/06_ActuaciónycomparacióndelIMSS_Nivel.pdf#toolbar=0', download='Files/PDF/Nivel/06_ActuaciónycomparacióndelIMSS_Nivel.rar')"><a href="#">Por Nivel</a></li>
+                            <li onclick="getPDF('Files/PDF/OOAD/06_ActuaciónycomparacióndelIMSS_OOAD.pdf#toolbar=0', download='Files/PDF/OOAD/06_ActuaciónycomparacióndelIMSS_OOAD.rar')"> <a href="#">Por OOAD</a></li>
+                            <li onclick="getPDF('Files/PDF/Region/06_ActuaciónycomparacióndelIMSS_Región.pdf#toolbar=0', download='Files/PDF/Region/06_ActuaciónycomparacióndelIMSS_Región.rar')"><a href="#">Por Regiones</a></li>
+                            <li onclick="getPDF('Files/PDF/SyE/06_ActuaciónycomparacióndelIMSS_SexoEdad.pdf#toolbar=0', download='Files/PDF/SyE/06_ActuaciónycomparacióndelIMSS_SexoEdad.rar')"><a href="#">Por Sexo y Rangos de edad</a></li>
+                        </ul>
+                    </li>
+                     <li onclick="getPDF('Files/PDF/07_PercepcióndeSeguridad.pdf#toolbar=0', download='Files/PDF/07_PercepcióndeSeguridad.rar')"><a href="#">Percepción de seguridad en unidades IMSS</a>
+                        <ul >                        
+                            <li onclick="getPDF('Files/PDF/Nivel/07_PercepcióndeSeguridad_Nivel.pdf#toolbar=0', download='Files/PDF/Nivel/07_PercepcióndeSeguridad_Nivel.rar')"> <a href="#">Por Nivel</a></li>
+                            <li onclick="getPDF('Files/PDF/OOAD/07_PercepcióndeSeguridad_OOAD.pdf#toolbar=0', download='Files/PDF/OOAD/07_PercepcióndeSeguridad_OOAD.rar')"> <a href="#">Por OOAD</a></li>
+                            <li onclick="getPDF('Files/PDF/Region/07_PercepcióndeSeguridad_Región.pdf#toolbar=0', download='Files/PDF/Region/07_PercepcióndeSeguridad_Región.rar')"> <a href="#">Por Regiones</a></li>
+                            <li onclick="getPDF('Files/PDF/SyE/07_PercepcióndeSeguridad_SexoEdad.pdf#toolbar=0', download='Files/PDF/SyE/07_PercepcióndeSeguridad_SexoEdad.rar')"> <a href="#">Por Sexo y Rangos de edad</a></li>
+                        </ul>
+                    </li>
+                    <li onclick="getPDF('Files/PDF/08_Efectosdeldistanciamientosocial.pdf#toolbar=0', download='Files/PDF/08_Efectosdeldistanciamientosocial.rar')"><a href="#">Salud mental por distanciamiento social</a>
+                        <ul >                        
+                            <li onclick="getPDF('Files/PDF/Nivel/08_Efectosdeldistanciamientosocial_Nivel.pdf#toolbar=0', download='Files/PDF/Nivel/08_Efectosdeldistanciamientosocial_Nivel.rar')"> <a href="#">Por Nivel</a></li>
+                            <li onclick="getPDF('Files/PDF/OOAD/08_Efectosdeldistanciamientosocial_OOAD.pdf#toolbar=0', download='Files/PDF/OOAD/08_Efectosdeldistanciamientosocial_OOAD.rar')"> <a href="#">Por OOAD</a></li>
+                            <li onclick="getPDF('Files/PDF/Region/08_Efectosdeldistanciamientosocial_Región.pdf#toolbar=0', download='Files/PDF/Region/08_Efectosdeldistanciamientosocial_Región.rar')"> <a href="#">Por Regiones</a></li>
+                            <li onclick="getPDF('Files/PDF/SyE/08_Efectosdeldistanciamientosocial_SexoEdad.pdf#toolbar=0', download='Files/PDF/SyE/08_Efectosdeldistanciamientosocial_SexoEdad.rar')"> <a href="#">Por Sexo y Rangos de edad</a></li>
+                        </ul>
+                    </li>
+                    <li onclick="getPDF('Files/PDF/09_Vacunacionyexpectativas.pdf#toolbar=0', download='Files/PDF/09_Vacunacionyexpectativas.rar')"><a href="#">Vacunación Covid-19 y expectativas</a>
+                        <ul>                        
+                            <li onclick="getPDF('Files/PDF/Nivel/09_Vacunacionyexpectativas_Nivel.pdf#toolbar=0', download='Files/PDF/Nivel/09_Vacunacionyexpectativas_Nivel.rar')"> <a href="#">Por Nivel</a></li>
+                            <li onclick="getPDF('Files/PDF/OOAD/09_Vacunacionyexpectativas_OOAD.pdf#toolbar=0', download='Files/PDF/OOAD/09_Vacunacionyexpectativas_OOAD.rar')"> <a href="#">Por OOAD</a></li>
+                            <li onclick="getPDF('Files/PDF/Region/09_Vacunacionyexpectativas_Región.pdf#toolbar=0', download='Files/PDF/Region/09_Vacunacionyexpectativas_Región.rar')"> <a href="#">Por Regiones</a></li>
+                            <li onclick="getPDF('Files/PDF/SyE/09_Vacunacionyexpectativas_SexoEdad.pdf#toolbar=0', download='Files/PDF/SyE/09_Vacunacionyexpectativas_SexoEdad.rar')"> <a href="#">Por Sexo y Rangos de edad</a></li>
+                        </ul>
+                    </li>
+                    <li onclick="getPDF('Files/PDF/10_HospitalizacionCovid.pdf#toolbar=0', download='Files/PDF/10_HospitalizacionCovid.rar')"><a href="#">Hospitalización por Covid-19</a>
+                        <ul >                        
+                            <li onclick="getPDF('Files/PDF/Nivel/10_HospitalizacionCovid_Nivel.pdf#toolbar=0', download='Files/PDF/Nivel/10_HospitalizacionCovid_Nivel.rar')"> <a href="#">Por Nivel</a></li>
+                            <li onclick="getPDF('Files/PDF/OOAD/10_HospitalizacionCovid_OOAD.pdf#toolbar=0', download='Files/PDF/OOAD/10_HospitalizacionCovid_OOAD.rar')"> <a href="#">Por OOAD</a></li>
+                            <li onclick="getPDF('Files/PDF/Region/10_HospitalizacionCovid_Región.pdf#toolbar=0', download='Files/PDF/Region/10_HospitalizacionCovid_Región.rar')"> <a href="#">Por Regiones</a></li>
+                            <li onclick="getPDF('Files/PDF/SyE/10_HospitalizacionCovid_SexoEdad.pdf#toolbar=0', download='Files/PDF/SyE/10_HospitalizacionCovid_SexoEdad.rar')"> <a href="#">Por Sexo y Rangos de edad</a></li>
+                        </ul>
+                    </li>
+                    <li onclick="getPDF('Files/PDF/11_Trabajocasa.pdf#toolbar=0', download='Files/PDF/11_Trabajocasa.rar')"><a href="#">Trabajo en casa</a>
+                        <ul >                        
+                            <li onclick="getPDF('Files/PDF/Nivel/11_Trabajocasa_Nivel.pdf#toolbar=0', download='Files/PDF/Nivel/11_Trabajocasa_Nivel.rar')"> <a href="#">Por Nivel</a></li>
+                            <li onclick="getPDF('Files/PDF/OOAD/11_Trabajocasa_OOAD.pdf#toolbar=0', download='Files/PDF/OOAD/11_Trabajocasa_OOAD.rar')"> <a href="#">Por OOAD</a></li>
+                            <li onclick="getPDF('Files/PDF/Region/11_Trabajocasa_Región.pdf#toolbar=0', download='Files/PDF/Region/11_Trabajocasa_Región.rar')"> <a href="#">Por Regiones</a></li>
+                            <li onclick="getPDF('Files/PDF/SyE/11_Trabajocasa_SexoEdad.pdf#toolbar=0', download='Files/PDF/SyE/11_Trabajocasa_SexoEdad.rar')"> <a href="#">Por Sexo y Rangos de edad</a></li>
+                        </ul>
+                    </li>
+                    <li onclick="getPDF('Files/PDF/12_DifusionInformacion.pdf#toolbar=0', download='Files/PDF/12_DifusionInformacion.rar')"><a href="#">Difusión de información Covid-19</a>
+                        <ul >                       
+                            <li onclick="getPDF('Files/PDF/Nivel/12_DifusionInformacion_Nivel.pdf#toolbar=0', download='Files/PDF/Nivel/12_DifusionInformacion_Nivel.rar')"> <a href="#">Por Nivel</a></li>
+                            <li onclick="getPDF('Files/PDF/OOAD/12_DifusionInformacion_OOAD.pdf#toolbar=0', download='Files/PDF/OOAD/12_DifusionInformacion_OOAD.rar')"> <a href="#">Por OOAD</a></li>
+                            <li onclick="getPDF('Files/PDF/Region/12_DifusionInformacion_Región.pdf#toolbar=0', download='Files/PDF/Region/12_DifusionInformacion_Región.rar')"> <a href="#">Por Regiones</a></li>
+                            <li onclick="getPDF('Files/PDF/SyE/12_DifusionInformacion_SexoEdad.pdf#toolbar=0', download='Files/PDF/SyE/12_DifusionInformacion_SexoEdad.rar')"> <a href="#">Por Sexo y Rangos de edad</a></li>
+                        </ul>
+                    </li>
+                    <li onclick="getPDF('Files/PDF/13_Preferencias.pdf#toolbar=0', download='Files/PDF/13_Preferencias.rar')"><a href="#">Preferencias en la atención</a>
+                        <ul >                        
+                            <li onclick="getPDF('Files/PDF/Nivel/13_Preferencias_Nivel.pdf#toolbar=0', download='Files/PDF/Nivel/13_Preferencias_Nivel.rar')"> <a href="#">Por Nivel</a></li>
+                            <li onclick="getPDF('Files/PDF/OOAD/13_Preferencias_OOAD.pdf#toolbar=0', download='Files/PDF/OOAD/13_Preferencias_OOAD.rar')"> <a href="#">Por OOAD</a></li>
+                            <li onclick="getPDF('Files/PDF/Region/13_Preferencias_Región.pdf#toolbar=0', download='Files/PDF/Region/13_Preferencias_Región.rar')"> <a href="#">Por Regiones</a></li>
+                            <li onclick="getPDF('Files/PDF/SyE/13_Preferencias_SexoEdad.pdf#toolbar=0', download='Files/PDF/SyE/13_Preferencias_SexoEdad.rar')"> <a href="#">Por Sexo y Rangos de edad</a></li>
+                        </ul>
+                    </li>
+                    <li onclick="getPDF('Files/PDF/14_Transparencia.pdf#toolbar=0', download='Files/PDF/14_Transparencia.rar')"><a href="#">Transparencia y posible corrupción</a>
+                        <ul>                        
+                            <li onclick="getPDF('Files/PDF/Nivel/14_Transparencia_Nivel.pdf#toolbar=0', download='Files/PDF/Nivel/14_Transparencia_Nivel.rar')"> <a href="#">Por Nivel</a></li>
+                            <li onclick="getPDF('Files/PDF/OOAD/14_Transparencia_OOAD.pdf#toolbar=0', download='Files/PDF/OOAD/14_Transparencia_OOAD.rar')"> <a href="#">Por OOAD</a></li>
+                            <li onclick="getPDF('Files/PDF/Region/14_Transparencia_Región.pdf#toolbar=0', download='Files/PDF/Region/14_Transparencia_Región.rar')"> <a href="#">Por Regiones</a></li>
+                            <li onclick="getPDF('Files/PDF/SyE/14_Transparencia_SexoEdad.pdf#toolbar=0', download='Files/PDF/SyE/14_Transparencia_SexoEdad.rar')"> <a href="#">Por Sexo y Rangos de edad</a></li>
+                        </ul>
+                    </li>
+                    <li onclick="getPDF('Files/PDF/15_Entregademedicamentos.pdf#toolbar=0', download='Files/PDF/15_Entregademedicamentos.rar')"><a href="#">Entrega de medicamentos condicionada</a>
+                        <ul>                        
+                            <li onclick="getPDF('Files/PDF/Nivel/15_Entregademedicamentos_Nivel.pdf#toolbar=0', download='Files/PDF/Nivel/15_Entregademedicamentos_Nivel.rar')"> <a href="#">Por Nivel</a></li>
+                            <li onclick="getPDF('Files/PDF/OOAD/15_Entregademedicamentos_OOAD.pdf#toolbar=0', download='Files/PDF/OOAD/15_Entregademedicamentos_OOAD.rar')"> <a href="#">Por OOAD</a></li>
+                            <li onclick="getPDF('Files/PDF/Region/15_Entregademedicamentos_Región.pdf#toolbar=0', download='Files/PDF/Region/15_Entregademedicamentos_Región.rar')"> <a href="#">Por Regiones</a></li>
+                            <li onclick="getPDF('Files/PDF/SyE/15_Entregademedicamentos_SexoEdad.pdf#toolbar=0', download='Files/PDF/SyE/15_Entregademedicamentos_SexoEdad.rar')"> <a href="#">Por Sexo y Rangos de edad</a></li>
+                        </ul>
+                    </li>
+                    <li onclick="getPDF('Files/PDF/16_Atenciónmedicaenfarmacias.pdf#toolbar=0', download='Files/PDF/16_Atenciónmedicaenfarmacias.rar')"><a href="#">Atención médica en consultorios de farmacias</a>
+                        <ul>                        
+                            <li onclick="getPDF('Files/PDF/Nivel/16_Atenciónmedicaenfarmacias_Nivel.pdf#toolbar=0', download='Files/PDF/Nivel/16_Atenciónmedicaenfarmacias_Nivel.rar')"> <a href="#">Por Nivel</a></li>
+                            <li onclick="getPDF('Files/PDF/OOAD/16_Atenciónmedicaenfarmacias_OOAD.pdf#toolbar=0', download='Files/PDF/OOAD/16_Atenciónmedicaenfarmacias_OOAD.rar')"> <a href="#">Por OOAD</a></li>
+                            <li onclick="getPDF('Files/PDF/Region/16_Atenciónenconsultoriosdefarmacias_Región.pdf#toolbar=0', download='Files/PDF/Region/16_Atenciónenconsultoriosdefarmacias_Región.rar')"> <a href="#">Por Regiones</a></li>
+                            <li onclick="getPDF('Files/PDF/SyE/16_Atenciónmedicaenfarmacias_SexoEdad.pdf#toolbar=0', download='.rar')"> <a href="#">Por Sexo y Rangos de edad</a></li>
+                        </ul>
+                    </li>
+                    <li onclick="getPDF('Files/PDF/17_Surtimiento.pdf#toolbar=0', download='Files/PDF/17_Surtimiento.rar')"><a href="#">Surtimiento de medicamentos</a>             
+                        <ul>                        
+                            <li onclick="getPDF('Files/PDF/Nivel/17_Surtimiento_Nivel.pdf#toolbar=0', download='Files/PDF/Nivel/17_Surtimiento_Nivel.rar')"> <a href="#">Por Nivel</a></li>
+                            <li onclick="getPDF('Files/PDF/OOAD/17_Surtimiento_OOAD.pdf#toolbar=0', download='Files/PDF/OOAD/17_Surtimiento_OOAD.rar')"> <a href="#">Por OOAD</a></li>
+                            <li onclick="getPDF('Files/PDF/Region/17_Surtimiento_Región.pdf#toolbar=0', download='Files/PDF/Region/17_Surtimiento_Región.rar')"> <a href="#">Por Regiones</a></li>
+                            <li onclick="getPDF('Files/PDF/SyE/17_Surtimiento_SexoEdad.pdf#toolbar=0', download='Files/PDF/SyE/17_Surtimiento_SexoEdad.rar')"> <a href="#">Por Sexo y Rangos de edad</a></li>
+                        </ul>
+                    </li>	
+                    <li onclick="getPDF('Files/PDF/18_Satisfaccionytrato.pdf#toolbar=0', download='Files/PDF/18_Satisfaccionytrato.rar')"><a href="#">Satisfacción y trato</a>
+                        <ul>                        
+                            <li onclick="getPDF('Files/PDF/Nivel/18_Satisfaccionytrato_Nivel.pdf#toolbar=0', download='Files/PDF/Nivel/18_Satisfaccionytrato_Nivel.rar')"> <a href="#">Por Nivel</a></li>
+                            <li onclick="getPDF('Files/PDF/OOAD/18_Satisfaccionytrato_OOAD.pdf#toolbar=0', download='Files/PDF/OOAD/18_Satisfaccionytrato_OOAD.rar')"> <a href="#">Por OOAD</a></li>
+                            <li onclick="getPDF('Files/PDF/Region/18_SatyTrato_Región.pdf#toolbar=0', download='Files/PDF/Region/18_SatyTrato_Región.rar')"> <a href="#">Por Regiones</a></li>
+                            <li onclick="getPDF('Files/PDF/SyE/18_Satisfaccionytrato_SexoEdad.pdf#toolbar=0', download='Files/PDF/SyE/18_Satisfaccionytrato_SexoEdad.rar')"> <a href="#">Por Sexo y Rangos de edad</a></li>
+                        </ul>
+                    </li>
+                    <li onclick="getPDF('Files/PDF/19_Covid.pdf#toolbar=0', download='Files/PDF/19_Covid.rar')"><a href="#">Diagnóstico de Covid-19</a>
+                        <ul>                        
+                            <li onclick="getPDF('Files/PDF/Nivel/19_Covid_Nivel.pdf#toolbar=0', download='Files/PDF/Nivel/19_Covid_Nivel.rar')"> <a href="#">Por Nivel</a></li>
+                            <li onclick="getPDF('Files/PDF/OOAD/19_Covid_OOAD.pdf#toolbar=0', download='Files/PDF/OOAD/19_Covid_OOAD.rar')"> <a href="#">Por OOAD</a></li>
+                            <li onclick="getPDF('Files/PDF/Region/19_Covid-19_Región.pdf#toolbar=0', download='Files/PDF/Region/19_Covid-19_Región.rar')"> <a href="#">Por Regiones</a></li>
+                            <li onclick="getPDF('Files/PDF/SyE/19_Covid_SexoEdad.pdf#toolbar=0', download='Files/PDF/SyE/19_Covid_SexoEdad.rar')"> <a href="#">Por Sexo y Rangos de edad</a></li>
+                        </ul>
+                    </li>                   
+                    <li onclick="getPDF('Files/PDF/20_Anexo Covid-19.pdf#toolbar=0', download='Files/PDF/20_Anexo Covid-19.rar')"><a href="#">Anexo</a></li>                        
+                    <li> <a>Seguimiento de indicadores 2018 - 2021</a>
+                        <ul>
+                            <li onclick="getPDF('Files/PDF/Seguimiento/210604_Indicadores nacionales 2018-2021.pdf#toolbar=0', download='Files/PDF/Seguimiento/210604_Indicadores nacionales 2018-2021.rar')"> <a href="#">Resultados nacionales</a></li>
+                            <li onclick="getPDF('Files/PDF/Seguimiento/210604_Indicadores por Nivel 2018-2021.pdf#toolbar=0', download='Files/PDF/Seguimiento/210604_Indicadores por Nivel 2018-2021.rar')"> <a href="#">Por Nivel</a></li>
+                            <li onclick="getPDF('Files/PDF/Seguimiento/210604_Indicadores por Región 2018-2021.pdf#toolbar=0', download='Files/PDF/Seguimiento/210604_Indicadores por Región 2018-2021.rar')"> <a href="#">Por Regiones</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </TD>
+            
+            <TD id="menuimss2">
+		      <embed id="desplegar" src="" type="application/pdf" />
+            </TD>
+            
+        </TR>
+    </TABLE>
+    
+</body>
+    
 </html>
+
+<script>
+
+function getPDF (str, download){
+var contenedor = document.getElementById("menuimss2");
+
+    if (event.myFunctionResolved == undefined) {
+        event.myFunctionResolved = true;
+        contenedor.innerHTML  ="";
+        /*innHT = "<embed id='desplegar' src='" + str + "' type='application/pdf' width='100%' height='540px'/>"*/
+        innHT = "<iframe src='" + str + "' frameborder='0' width='100%' height='75%' allowfullscreen='true' mozallowfullscreen='true' webkitallowfullscreen='true'></iframe>  <a href='" + download + "'><p>Descargar </a>"
+        contenedor.innerHTML  = innHT;
+    }
+  };
+</script>
